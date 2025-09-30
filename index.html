@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Seismic — James William</title>
+  <meta name="description" content="Professional single-page site - James William" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="assets/favicon.svg" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#">Seismic<span class="accent">.</span></a>
+
+      <nav id="nav" class="nav">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="right-panel">
+        <div class="owner">
+          <span class="owner-name">James William</span>
+        </div>
+        <button id="menuBtn" class="menu-btn" aria-label="menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-left">
+          <h1>Build. Verify. Ship.</h1>
+          <p class="lead">Professional, secure, and responsive single-page web presence for projects and portfolios. Built for GitHub & Vercel deployment.</p>
+          <div class="hero-cta">
+            <a class="btn" href="#projects">See Projects</a>
+            <a class="btn btn-outline" href="#contact">Get in touch</a>
+          </div>
+          <div class="social-inline">
+            <a href="https://x.com/Gmsniper6" target="_blank" rel="noopener noreferrer">X / @Gmsniper6</a>
+            <span>•</span>
+            <a href="#" title="Discord (copy)">Discord: @jackcm_wsw3</a>
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <!-- Placeholder image; replace with your professional image in assets -->
+          <div class="card profile-card">
+            <img src="assets/profile-placeholder.jpg" alt="James William" />
+            <div class="card-content">
+              <h3>James William</h3>
+              <p>Developer · Designer · Web3 Enthusiast</p>
+              <p class="small">X: <a href="https://x.com/Gmsniper6" target="_blank">@Gmsniper6</a></p>
+              <p class="small">Discord: @jackcm_wsw3</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section about">
+      <div class="container">
+        <h2>About</h2>
+        <p>
+          Ye page Seismic-style layout ki tarah banaya gaya hai — modern hero, concise about section, features and projects block.
+          Is site ka maksad aapki professional presence dikhana hai — aap GitHub pe deploy karke portfolio ya project landing page use kar sakte hain.
+        </p>
+
+        <div class="about-grid">
+          <div class="about-item">
+            <h3>Mission</h3>
+            <p>Secure, accessible aur professional web presence create karna jo GitHub + Vercel workflow ke liye optimized ho.</p>
+          </div>
+          <div class="about-item">
+            <h3>Approach</h3>
+            <p>Simple, performance-first aur responsive design; clean code with semantic HTML & CSS.</p>
+          </div>
+          <div class="about-item">
+            <h3>Contact</h3>
+            <p>Direct: <a href="https://x.com/Gmsniper6" target="_blank">@Gmsniper6</a> • Discord: @jackcm_wsw3</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services / Features -->
+    <section id="services" class="section features">
+      <div class="container">
+        <h2>Services</h2>
+        <div class="features-grid">
+          <div class="feature">
+            <h4>Web Development</h4>
+            <p>Modern HTML/CSS/JS sites, deploy-ready for GitHub Pages / Vercel.</p>
+          </div>
+          <div class="feature">
+            <h4>UI/UX Design</h4>
+            <p>Clean and accessible interfaces with responsive behavior across devices.</p>
+          </div>
+          <div class="feature">
+            <h4>Web3 Integrations</h4>
+            <p>Advisory & integration for wallets, identity layers and decentralized flows.</p>
+          </div>
+          <div class="feature">
+            <h4>Consulting</h4>
+            <p>Project scoping, code reviews, and deployment support.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section projects">
+      <div class="container">
+        <h2>Selected Projects</h2>
+        <div class="projects-grid">
+          <article class="project-card">
+            <img src="assets/project1.jpg" alt="Project 1" />
+            <h4>Project Alpha</h4>
+            <p>Landing page, analytics integration, and CI/CD pipeline.</p>
+            <a class="card-link" href="#" target="_blank">View on GitHub</a>
+          </article>
+
+          <article class="project-card">
+            <img src="assets/project2.jpg" alt="Project 2" />
+            <h4>Project Beta</h4>
+            <p>Micro-frontend demo with static hosting and proxy config.</p>
+            <a class="card-link" href="#" target="_blank">View on GitHub</a>
+          </article>
+
+          <article class="project-card">
+            <img src="assets/project3.jpg" alt="Project 3" />
+            <h4>Project Gamma</h4>
+            <p>Auth + user verification proof-of-concept for Web3.</p>
+            <a class="card-link" href="#" target="_blank">View on GitHub</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section contact">
+      <div class="container">
+        <h2>Contact</h2>
+        <p>Reach out via X or Discord — quick message on X is best for short collabs.</p>
+
+        <form id="contactForm" class="contact-form" action="#" onsubmit="return false;">
+          <label>
+            Name
+            <input type="text" name="name" placeholder="Your name" required />
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" placeholder="you@example.com" required />
+          </label>
+          <label>
+            Message
+            <textarea name="message" rows="4" placeholder="How can I help?" required></textarea>
+          </label>
+          <div class="form-actions">
+            <button class="btn" type="submit">Send</button>
+            <button class="btn btn-outline" id="copyContact" type="button">Copy Socials</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <small>© <span id="year"></span> James William — Built with care.</small>
+      </div>
+      <div class="footer-links">
+        <a href="https://x.com/Gmsniper6" target="_blank">X</a>
+        <a href="#" title="Discord (copy)">Discord</a>
+        <a href="https://github.com" target="_blank">GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
